@@ -7,21 +7,20 @@ package InClass_Boredom;
 
 import java.util.Random;
 import java.util.Calendar;
+import java.util.GregorianCalendar;
 
 public class IsWillHavingFun {
 	static boolean isWillHavingFun;
 	static boolean isWillLearning = false;
 	
 	Random rand = new Random();
-	Calendar cal = Calendar.getInstance();
-
-	public static void main(String[] args) {
-		int low = Integer.parseInt(args[0]);
-        int high = Integer.parseInt(args[1]);
+	static Calendar cal = new GregorianCalendar();
+	
+	public static boolean rand_Number() {
+		int low = 0;
+        int high = 1;
         
 		int rand_Num = (int)(Math.random() * (high - low)) + low;
-		
-		System.out.println("Hello World!");
 		
 		if(rand_Num == 1) {
 			isWillHavingFun = true;
@@ -34,5 +33,12 @@ public class IsWillHavingFun {
 			isWillHavingFun = false;
 			System.out.println("Will is Bored");
 		}	
+		
+		return isWillHavingFun;
+	} 
+
+	public static void main(String[] args) {
+		int current_Day = cal.get(Calendar.DAY_OF_WEEK);
+		int hr = cal.get(Calendar.HOUR_OF_DAY);
 	}
 }
