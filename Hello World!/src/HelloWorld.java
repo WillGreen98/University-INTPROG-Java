@@ -15,7 +15,7 @@ public class HelloWorld {
 		int low = Integer.parseInt(args[0]);
         int high = Integer.parseInt(args[1]);
         
-		int rand_Num = (int) (Math.random() * (high - low)) + low;
+		int rand_Num = (int)(Math.random() * (high - low)) + low;
 		
 		System.out.println("Hello World!");
 		
