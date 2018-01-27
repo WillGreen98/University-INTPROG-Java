@@ -16,6 +16,9 @@ public class IsWillHavingFun {
 	Random rand = new Random();
 	static Calendar cal = new GregorianCalendar();
 	
+	Calendar_Att f = new Calendar_Att();
+	
+	
 	public static boolean rand_Number() {
 		int low = 0;
         int high = 1;
