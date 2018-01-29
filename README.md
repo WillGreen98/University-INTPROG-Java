@@ -7,7 +7,7 @@ This module will contain:
 
 1. All in-classes examples
 2. Practical Session Code
-3. Random "Boredom(N)_TOPIC" files
+3. Random "Boredom" files within ./Boredom/bin/
 4. Coursework
 
 ## Week 13
