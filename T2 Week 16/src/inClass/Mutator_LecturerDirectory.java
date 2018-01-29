@@ -19,9 +19,24 @@ public class Mutator_LecturerDirectory {
         numProjectStudents = 0;
     }
     
-    // Mutator Method 
+    // Mutator - Getter Method 
     public String getName() {
     		return name;
+    }
+    
+    // Mutator - Setter Method 
+    public void setName(String newName) {
+    		name = newName;
+    }
+    
+    public void setNumProjectStudent(int newNum) {
+    		if(newNum < 0) {
+    			System.out.println("You cannot have zero students");
+		} else if(newNum > 6) {
+			System.out.println("You cannot have more than 6 students");
+		} else {
+			numProjectStudents = newNum;
+		}
     }
 
     public void addProjectStudent() {
