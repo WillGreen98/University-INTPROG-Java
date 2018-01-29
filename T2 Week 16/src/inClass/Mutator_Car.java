@@ -16,8 +16,9 @@ public class Mutator_Car {
     int currentGear;
     boolean airConOn;
     boolean lightsOn;
+    String colour;
 
-    public Mutator_Car(String cMake, String cModel, String cReg, float cEngine, String cFuel, String cDriver) {
+    public Mutator_Car(String cMake, String cModel, String cReg, float cEngine, String cFuel, String cDriver, String cColour) {
         make = cMake;
         model = cModel;
         registration = cReg;
@@ -28,8 +29,10 @@ public class Mutator_Car {
         currentGear = 1;
         airConOn = true;
         lightsOn = false;
+        colour = cColour;
     }
     
+    // Getter Methods    
     public String getMake() {
     		return make;
     } 
@@ -46,12 +49,37 @@ public class Mutator_Car {
 		return lightsOn;
     } 
     
+    public String getColour() {
+    		return colour;
+    } 
+    
     public int getCurrentGear() {
 		return currentGear;
     } 
     
     public float getCurrentMileage() {
     		return currentMileage;
+    } 
+    
+    // Setter Methods
+    public void setReg(String newReg) {
+    		registration = newReg;
+    } 
+    
+    public void setColour(String newColour) {
+    		colour = newColour;
+    } 
+    
+    public void setLights() {
+    		
+    }
+    
+    public void setCurrentMileage(float newMiles) {
+    		currentMileage = newMiles;
+    } 
+    
+    public void setGear(int gear) {
+    		currentGear = gear;
     } 
 
     public void changeRegistration(String newReg) {
