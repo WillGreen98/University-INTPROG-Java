@@ -5,7 +5,7 @@ package practical;
  * Practical Week 15
  */
 
-public class Week_15 {
+public class Practical_15 {
 	public static void main(String[] args) {
 
 	}
