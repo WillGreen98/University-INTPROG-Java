@@ -20,7 +20,6 @@ public class Dice {
 		return roll + 1;
 	} 
 	
-	
 	public static void main(String[] args) {
 		Dice dice = new Dice();
 		
