@@ -9,15 +9,11 @@ import java.util.Random;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
+import InClass_Boredom.Calendar_Att;
+
 public class IsWillHavingFun {
 	static boolean isWillHavingFun;
 	static boolean isWillLearning = false;
-	
-	Random rand = new Random();
-	static Calendar cal = new GregorianCalendar();
-	
-	Calendar_Att f = new Calendar_Att();
-	
 	
 	public static boolean rand_Number() {
 		int low = 0;
@@ -41,7 +37,6 @@ public class IsWillHavingFun {
 	} 
 
 	public static void main(String[] args) {
-		int current_Day = cal.get(Calendar.DAY_OF_WEEK);
-		int hr = cal.get(Calendar.HOUR_OF_DAY);
+	
 	}
 }
