@@ -78,7 +78,7 @@ public class Mutator_Car {
     		currentMileage = newMiles;
     		if(newMiles < currentGear) {
     			// Matilda Joke
-    			System.out.println("Milage cannot go backwars... unless your name is: Harry Wormwood");
+    			System.out.println("Milage cannot go backwards... Unless your name is: Harry Wormwood");
 		} else {
 			currentMileage = newMiles;
 		}
