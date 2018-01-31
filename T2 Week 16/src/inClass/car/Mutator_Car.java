@@ -18,7 +18,7 @@ public class Mutator_Car {
     boolean lightsOn;
     String colour;
 
-    public Mutator_Car(String cMake, String cModel, String cReg, double cEngine, String cFuel, String cDriver, String cColour) {
+    public Mutator_Car(String cMake, String cModel, String cReg, float cEngine, String cFuel, String cDriver, String cColour) {
         make = cMake;
         model = cModel;
         registration = cReg;
@@ -70,8 +70,8 @@ public class Mutator_Car {
     		colour = newColour;
     } 
     
-    public void setLights() {
-    		
+    public void setLights(boolean setLights) {
+    		lightsOn = setLights;
     }
     
     public void setCurrentMileage(float newMiles) {
