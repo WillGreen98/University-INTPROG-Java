@@ -2,7 +2,7 @@ package inClass.dice;
 
 /**
  * @author Will
- * Week 16 - Lecture 2
+ * In Class Week 16
  */
 
 import java.util.Random;

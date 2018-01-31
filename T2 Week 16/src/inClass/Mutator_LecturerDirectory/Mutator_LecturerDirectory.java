@@ -12,7 +12,6 @@ public class Mutator_LecturerDirectory {
     private int numProjectStudents;
 
     public Mutator_LecturerDirectory(String lecturerName, int lecturerPhone, String officeNo) {
-        // initialise instance variables
         name = lecturerName;
         phoneNumber = lecturerPhone;
         office = officeNo;
@@ -24,11 +23,16 @@ public class Mutator_LecturerDirectory {
     		return name;
     }
     
+    public int getStudentProjects() {
+    		return numProjectStudents;
+    } 
+    
     // Mutator - Setter Method 
     public void setName(String newName) {
     		name = newName;
     }
     
+
     public void setNumProjectStudent(int newNum) {
     		if(newNum < 0) {
     			System.out.println("You cannot have zero students");

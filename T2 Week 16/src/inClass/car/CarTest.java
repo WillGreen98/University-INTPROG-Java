@@ -1,5 +1,10 @@
 package inClass.car;
 
+/**
+ * @author Will
+ * In Class Week 16
+ */
+
 import inClass.car.*;
 
 public class CarTest {
