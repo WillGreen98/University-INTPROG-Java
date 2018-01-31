@@ -1,4 +1,4 @@
-package dice;
+package inClass.dice;
 
 /**
  * @author Will

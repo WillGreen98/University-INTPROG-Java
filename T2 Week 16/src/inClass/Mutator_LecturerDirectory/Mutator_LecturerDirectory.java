@@ -1,4 +1,4 @@
-package inClass;
+package inClass.Mutator_LecturerDirectory;
 
 /**
  * @author Will
