@@ -76,10 +76,22 @@ public class Mutator_Car {
     
     public void setCurrentMileage(float newMiles) {
     		currentMileage = newMiles;
+    		if(newMiles < currentGear) {
+    			// Matilda Joke
+    			System.out.println("Milage cannot go backwars... unless your name is: Harry Wormwood");
+		} else {
+			currentMileage = newMiles;
+		}
     } 
     
     public void setGear(int gear) {
-    		currentGear = gear;
+	    	if(gear <= 0) {
+	    		System.out.println("Gear cannot be less than 1");
+	    	} else if (gear > 5) {
+	    		System.out.println("Gear cannot be more than 5");
+	    } else {
+	    		currentGear = gear;
+	    }
     } 
 
     public void changeRegistration(String newReg) {
