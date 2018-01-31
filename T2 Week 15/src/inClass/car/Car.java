@@ -12,7 +12,7 @@ public class Car {
     double engine;
     String fuel;
     String driverSide;
-    double currentMileage;;
+    double currentMileage;
     int currentGear;
     boolean airConOn;
     boolean lightsOn;
