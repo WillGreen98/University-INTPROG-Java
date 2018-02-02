@@ -2,7 +2,7 @@ package practical;
 
 /**
  * @author Will
- *
+ * Practical Week 16
  */
 
 public class Student {
