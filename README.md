@@ -38,3 +38,9 @@ This module will contain:
 * Develop advanced mutator methods using conditionals
 * Describe the difference between primitive and object types
 * Develop programs which make use of other objects and libraries
+
+## Week 17
+
+* Develop applications using the Canvas and KeyboardInput classes
+* Explain Collections, Arrays and ArrayLists
+* Implement Arrays and ArrayLists in the Java programming language
