@@ -1,17 +1,17 @@
 package InClass_Boredom;
 
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+import java.util.Locale;
+
 /**
  * @author Will
  * This is the beginning to my Java Programming Boredom section
  */
 
-import java.util.Random;
-import java.util.Calendar;
-import java.util.GregorianCalendar;
-
 import InClass_Boredom.Calendar_Att;
 
-public class IsWillHavingFun {
+public class IsWillHavingFun {	
 	static boolean isWillHavingFun;
 	static boolean isWillLearning = false;
 	
@@ -37,6 +37,7 @@ public class IsWillHavingFun {
 	} 
 
 	public static void main(String[] args) {
-	
+		Calendar c = new GregorianCalendar();
+	    System.out.println(Locale.getDefault() + ": " + (c.getFirstDayOfWeek() - 1));   
 	}
 }
