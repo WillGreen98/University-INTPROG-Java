@@ -6,41 +6,42 @@ package inClass.canvas;
  */
 
 import java.awt.*;
+import inClass.canvas.Canvas;
 
 public class Android {
-    private Canvas win;
+    private Canvas window;
 
     public Android(Canvas window) {
-        win = window;
+        this.window = window;
     }
 
     public void drawAndroid() {
-        win.setForegroundColor(Color.GREEN);
+        window.setForegroundColor(Color.GREEN);
         
         // head
-        win.fillSemiCircle(150, 50, 200, 200,false, true);
+        window.fillSemiCircle(150, 50, 200, 200,false, true);
     
         // body
-        win.fillRectangle(150, 155, 200, 195);
+        window.fillRectangle(150, 155, 200, 195);
         
         // left arm
-        win.fillRectangle(100, 225, 45, 75);
-        win.fillSemiCircle(100, 200, 45, 50, false, true);
+        window.fillRectangle(100, 225, 45, 75);
+        window.fillSemiCircle(100, 200, 45, 50, false, true);
         
         // right arm
-        win.fillRectangle(355, 225, 45, 75);
-        win.fillSemiCircle(355, 200, 45, 50, false, true);
+        window.fillRectangle(355, 225, 45, 75);
+        window.fillSemiCircle(355, 200, 45, 50, false, true);
         
         // left leg
-        win.fillRectangle(175, 355, 50, 95);
+        window.fillRectangle(175, 355, 50, 95);
         
         // right leg
-        win.fillRectangle(275, 355, 50, 95);
+        window.fillRectangle(275, 355, 50, 95);
         
         // eyes
-        win.setForegroundColor(Color.WHITE);
-        win.fillCircle(200, 100, 25);
-        win.fillCircle(300, 100, 25);
+        window.setForegroundColor(Color.WHITE);
+        window.fillCircle(200, 100, 25);
+        window.fillCircle(300, 100, 25);
     }
     
     public static void main(String[] args) {
