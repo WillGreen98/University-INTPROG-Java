@@ -44,3 +44,10 @@ This module will contain:
 * Develop applications using the Canvas and KeyboardInput classes
 * Explain Collections, Arrays and ArrayLists
 * Implement Arrays and ArrayLists in the Java programming language
+
+## Week 18
+
+*
+*
+*
+*
