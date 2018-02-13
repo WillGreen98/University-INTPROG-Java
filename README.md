@@ -47,7 +47,8 @@ This module will contain:
 
 ## Week 18
 
-*
-*
-*
-*
+* Arrays / Array Lists
+* Iterators
+	* For Loops
+	* For Each Loops
+	* While Loops
