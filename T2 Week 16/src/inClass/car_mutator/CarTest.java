@@ -1,11 +1,6 @@
-package inClass.car;
+package inClass.car_mutator;
 
-/**
- * @author Will
- * In Class Week 16
- */
-
-import inClass.car.*;
+import inClass.car_mutator.*;
 
 public class CarTest {
     public static void main(String[] args) {

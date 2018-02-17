@@ -1,17 +1,17 @@
-package inClass.Mutator_LecturerDirectory;
+package inClass.lecturerDirectory_array;
 
 /**
  * @author Will
- * In Class Week 16
+ * In Class Week 18
  */
 
-public class Mutator_LecturerDirectory {	
+public class Lecturer {	
     private String name;
     private int phoneNumber;
     private String office;
     private int numProjectStudents;
 
-    public Mutator_LecturerDirectory(String lecturerName, int lecturerPhone, String officeNo) {
+    public Lecturer(String lecturerName, int lecturerPhone, String officeNo) {
         name = lecturerName;
         phoneNumber = lecturerPhone;
         office = officeNo;
@@ -51,5 +51,15 @@ public class Mutator_LecturerDirectory {
         int numProjectHours = (numProjectStudents * 2) * numWeeks;
         
         return numProjectHours;
+    }
+    
+    public void printInfo() {
+        String printString = "Lecturer Information";
+        printString += "\nName: " + name;
+        printString += "\nExtension Number: " + phoneNumber;
+        printString += "\nOffice Number: " + office;
+        printString += "\nProject Students: " + numProjectStudents;
+        
+        System.out.println(printString);
     }
 }

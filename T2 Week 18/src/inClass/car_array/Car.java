@@ -1,11 +1,11 @@
-package inClass.car;
+package inClass.car_array;
 
 /**
  * @author Will
- * In Class Week 16
+ * In Class Week 18
  */
 
-public class Mutator_Car {
+public class Car {
     String make;
     String model;
     String registration;
@@ -18,7 +18,7 @@ public class Mutator_Car {
     boolean lightsOn;
     String colour;
 
-    public Mutator_Car(String cMake, String cModel, String cReg, float cEngine, String cFuel, String cDriver, String cColour) {
+    public Car(String cMake, String cModel, String cReg, float cEngine, String cFuel, String cDriver, String cColour) {
         make = cMake;
         model = cModel;
         registration = cReg;
@@ -108,5 +108,19 @@ public class Mutator_Car {
         currentMileage += miles;
         
         return currentMileage;
+    }
+    
+    public void printInfo() {
+        String printString = "Car Information";
+        printString += "\nMake: " + make;
+        printString += "\nModel: " + model;
+        printString += "\nRegistration: " + registration;
+        printString += "\nEngine Size: " + engine;
+        printString += "\nFuel: " + fuel;
+        printString += "\nCurrent Mileage: " + currentMileage;
+        printString += "\nDrivers Side: " + driverSide;
+        printString += "\nColour: " + colour;
+        
+        System.out.println(printString);
     }
 }
