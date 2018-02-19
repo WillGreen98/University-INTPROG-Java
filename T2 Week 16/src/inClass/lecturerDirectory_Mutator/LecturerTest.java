@@ -1,4 +1,4 @@
-package inClass.lecturerDirectory_mutator;
+package inClass.lecturerDirectory_Mutator;
 
 /**
  * @author Will
@@ -7,7 +7,7 @@ package inClass.lecturerDirectory_mutator;
 
 public class LecturerTest {
 	public static void main(String[] args) {
-		Mutator_LecturerDirectory lecturer = new Mutator_LecturerDirectory("Claire", 6463, "BK1.04b");
+		Lecturer lecturer = new Lecturer("Claire", 6463, "BK1.04b");
 	       
        System.out.println("Lecturer name: " + lecturer.getName());
        

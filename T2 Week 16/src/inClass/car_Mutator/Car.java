@@ -1,8 +1,8 @@
-package inClass.car_array;
+package inClass.car_Mutator;
 
 /**
  * @author Will
- * In Class Week 18
+ * In Class Week 16
  */
 
 public class Car {
@@ -108,19 +108,5 @@ public class Car {
         currentMileage += miles;
         
         return currentMileage;
-    }
-    
-    public void printInfo() {
-        String printString = "Car Information";
-        printString += "\nMake: " + make;
-        printString += "\nModel: " + model;
-        printString += "\nRegistration: " + registration;
-        printString += "\nEngine Size: " + engine;
-        printString += "\nFuel: " + fuel;
-        printString += "\nCurrent Mileage: " + currentMileage;
-        printString += "\nDrivers Side: " + driverSide;
-        printString += "\nColour: " + colour;
-        
-        System.out.println(printString);
     }
 }

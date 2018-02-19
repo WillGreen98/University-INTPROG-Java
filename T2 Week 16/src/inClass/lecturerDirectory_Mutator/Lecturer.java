@@ -1,17 +1,17 @@
-package inClass.lecturerDirectory_mutator;
+package inClass.lecturerDirectory_Mutator;
 
 /**
  * @author Will
  * In Class Week 16
  */
 
-public class Mutator_LecturerDirectory {	
+public class Lecturer {	
     private String name;
     private int phoneNumber;
     private String office;
     private int numProjectStudents;
 
-    public Mutator_LecturerDirectory(String lecturerName, int lecturerPhone, String officeNo) {
+    public Lecturer(String lecturerName, int lecturerPhone, String officeNo) {
         name = lecturerName;
         phoneNumber = lecturerPhone;
         office = officeNo;

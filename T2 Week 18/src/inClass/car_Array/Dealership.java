@@ -1,4 +1,4 @@
-package inClass.car_array;
+package inClass.car_Array;
 
 /**
  * @author Will

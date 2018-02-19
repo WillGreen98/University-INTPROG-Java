@@ -1,4 +1,4 @@
-package inClass.lecturerDirectory_array;
+package inClass.lecturerDirectory_Array;
 
 /**
  * @author Will

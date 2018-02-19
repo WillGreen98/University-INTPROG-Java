@@ -1,10 +1,10 @@
-package inClass.car_mutator;
+package inClass.car_Mutator;
 
-import inClass.car_mutator.*;
+import inClass.car_Mutator.*;
 
 public class CarTest {
     public static void main(String[] args) {
-        Mutator_Car car = new Mutator_Car("Honda", "Jazz", "AB12 CDE", 1.6f, "Petrol", "Left", "Purple");
+        Car car = new Car("Honda", "Jazz", "AB12 CDE", 1.6f, "Petrol", "Left", "Purple");
         
         System.out.println("Car make: " + car.getMake());
         System.out.println("Car model: " + car.getModel());
