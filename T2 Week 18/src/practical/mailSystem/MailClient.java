@@ -1,5 +1,9 @@
 package practical.mailSystem;
 
+/**
+ * @author Will
+ * Practical Week 18
+ */
 
 public class MailClient {
     private MailServer server;  // this is the send / receive server
