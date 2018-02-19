@@ -54,3 +54,11 @@ This module will contain:
 	* While Loops
 	
 ## Week 19
+
+* Recall the concepts of generalisation and inheritance 
+* Implement inheritance using the Java programming language 
+* Distinguish HAS-A and IS-A relationships between classes
+* Implement Polymorphism in the Java programming language
+
+
+	
