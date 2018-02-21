@@ -10,6 +10,8 @@ This module will contain:
 3. Random "Boredom" files within ./Boredom/bin/
 4. Coursework
 
+There may be duplicate files of some classes, this is due to the topics being taught for a certain week. We may cover programming concepts that can be added to previous projects or that are needed for new teaching weeks :) 
+
 ## Week 13
 
 * Define objects and classes
