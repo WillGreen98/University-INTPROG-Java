@@ -24,6 +24,8 @@ public class LabClass {
 		this.timeTabled = timeTabled;
 		this.maxStudents = maxStudents;
 		this.groupNumber = groupNumber;
+		
+		studentList = new ArrayList<Student>();
 	}
 
 	public String getUnit() {
