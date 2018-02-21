@@ -1,5 +1,10 @@
 package inClass.zoo;
 
+/**
+ * @author Will
+ * In Class Week 19
+ */
+
 import java.util.*;
 
 public class Animal
