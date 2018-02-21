@@ -103,9 +103,9 @@ public class LabClass {
 	
 	public void removeStudent_Name(String studentName_Remove) {
 		Iterator<Student> student_Iterator = studentList.iterator();
+		boolean found = false;
 		Student currentStudent;
 		String currentStudent_Name;
-		boolean found = false;
 		
 		while(student_Iterator.hasNext()) {
 			currentStudent = student_Iterator.next();
@@ -126,8 +126,8 @@ public class LabClass {
 	public void findStudent_Name(String StudentName_Search) {
 		int index = 0;
 		boolean found = false;
-		String studentName;
 		Student currentStudent;
+		String studentName;
 		
 		while(index < studentList.size() && !found) {
 			currentStudent = studentList.get(index);
@@ -156,7 +156,7 @@ public class LabClass {
 		System.out.println("Enrolled No. : " + studentList.size());
 		
 		System.out.println("===== Student List =====");
-		for(Student student : studentList) {
+		for(Student student: studentList) {
 			System.out.println(student.getName());
 		}
 	} 
