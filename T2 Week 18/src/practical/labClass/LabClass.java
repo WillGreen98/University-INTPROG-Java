@@ -161,5 +161,23 @@ public class LabClass {
 	
 	public static void main(String[] args) {
 		LabClass intprog = new LabClass("INTPROG", "Claire", "LG0.14", "Friday 1-3", 50, 4);
+		
+		intprog.addStudent(new Student("Alice", "123456", "Programming"));
+		intprog.printInfo();
+
+		intprog.addStudent(new Student("Bob", "234567", "Programming"));
+		intprog.addStudent(new Student("Charlie", "345678", "Programming"));
+		intprog.addStudent(new Student("David", "456789", "Programming"));
+		intprog.addStudent(new Student("Eve", "567890", "Programming")); // this should produce an error
+
+		intprog.printInfo();
+
+		intprog.findStudent_Name("Charlie");
+		intprog.removeStudent_Index(1);
+		intprog.printInfo();
+		intprog.removeStudent_Name("David");
+		intprog.findStudent_Name("David"); // this should produce an error
+		intprog.removeStudent_Name("David"); // this should produce an error
+
 	}
 }
