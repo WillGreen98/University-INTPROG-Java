@@ -17,18 +17,18 @@ public class MusicOrganiser {
         music.buyNewAlbum(album2);
         music.buyNewAlbum(album3);
         
-        music.printMusicCollectionInformation();
+        music.printInfo();
         System.out.println();
         
         music.sellAlbum(1);
-        music.printMusicCollectionInformation();
+        music.printInfo();
         System.out.println();
         
-        music.sellAlbumByName("Nothing But the Beat");
-        music.printMusicCollectionInformation();
+        music.sellAlbumByTitle("Nothing But the Beat");
+        music.printInfo();
         System.out.println();
         
-        music.sellAlbumByName("Nothing But the Beat");
+        music.sellAlbumByTitle("Nothing But the Beat");
         System.out.println();
         
         System.out.println("Album1 Purchased: " + music.checkAlbumPurchased(album1));
@@ -42,7 +42,7 @@ public class MusicOrganiser {
         music.getAlbum(0).printAlbumInfo();
         System.out.println();
         
-        music.printMusicCollectionInformation();
+        music.printInfo();
         System.out.println();
         
         music.findArtist("Avicii");
@@ -54,13 +54,13 @@ public class MusicOrganiser {
         
         music.buyNewAlbum(album2);
         music.buyNewAlbum(album3);
-        music.printMusicCollectionInformation();
+        music.printInfo();
         System.out.println();
         
         music.printAllAlbumsByArtist("Avicii");
         System.out.println();
         
         music.removeArtist("Avicii");
-        music.printMusicCollectionInformation();    
+        music.printInfo();    
     }
 }
