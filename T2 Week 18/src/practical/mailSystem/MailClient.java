@@ -19,7 +19,7 @@ public class MailClient {
         if(item == null) {
             System.out.println("No new mail.");
         } else {
-            item.print();
+            item.printMail();
         }
     }
     
