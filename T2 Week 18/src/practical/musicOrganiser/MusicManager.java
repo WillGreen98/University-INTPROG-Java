@@ -94,7 +94,9 @@ public class MusicManager {
 
     public void printAllAlbumsByArtist(String artistToPrint) {
         for(Album album: musicCollection) {
-        		System.out.println("Album Artist: " + album.getArtist());
+        		if(album.getArtist().equals(artistToPrint)) {
+        			album.printAlbumInfo();
+        		}
         }
     }
 
