@@ -19,10 +19,15 @@ public class MailServer {
 	}
 	
 	public MailItem getNextMailItem(String user) {
-		return null;
+		MailItem item;
+		if(item == null) {
+            System.out.println("No new mail.");
+        } else {
+            item.printMail();
+        }
 	}
 	
-	public MailItem post() {
+	public MailItem post(MailItem item) {
 		return null;
 	}
 }
