@@ -62,5 +62,11 @@ There may be duplicate files of some classes, this is due to the topics being ta
 * Distinguish HAS-A and IS-A relationships between classes
 * Implement Polymorphism in the Java programming language
 
+## Week 20
+* Implement method overriding using the Java programming language 
+* Use appropriate JavaDoc comments within applications developed
+* Implement method and constructor overloading in Java programs
+* Develop enum classes in Java
+
 
 	
