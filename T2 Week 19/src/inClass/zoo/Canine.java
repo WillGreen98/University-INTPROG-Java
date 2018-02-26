@@ -1,10 +1,5 @@
 package inClass.zoo;
 
-/**
- * @author Will
- * In Class Week 19
- */
-
 public class Canine extends Animal
 {
     
