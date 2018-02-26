@@ -1,4 +1,10 @@
 package inClass.lecturer_Inheritance;
+
+/**
+ * @author Will
+ * In Class Week 19
+ */
+
 public class TestLecturers
 {
     public static void main(String[] args)
@@ -7,7 +13,6 @@ public class TestLecturers
         
         ld.addLecturer(new Lecturer("Alice", 6463, "BK1.04b"));
         ld.addLecturer(new SeniorLecturer("Bob", 6102, "BK1.04a", "INTPROG"));
-       
         
         ld.printLecturerInformation();
         System.out.println();

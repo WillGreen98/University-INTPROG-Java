@@ -1,4 +1,10 @@
 package inClass.lecturer_Inheritance;
+
+/**
+ * @author Will
+ * In Class Week 19
+ */
+
 import java.util.*;
 
 public class LecturerDirectory

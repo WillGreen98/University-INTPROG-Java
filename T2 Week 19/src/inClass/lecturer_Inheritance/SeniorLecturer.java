@@ -1,4 +1,10 @@
 package inClass.lecturer_Inheritance;
+
+/**
+ * @author Will
+ * In Class Week 19
+ */
+
 public class SeniorLecturer extends Lecturer
 {
     private String unitResponsibility;
