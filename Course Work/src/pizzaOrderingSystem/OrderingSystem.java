@@ -48,6 +48,5 @@ public class OrderingSystem {
         
         Pizza pizza3 = new Pizza(canvas, 600, 0);
         pizza3.displayPizza();
-        
     }   
 }
