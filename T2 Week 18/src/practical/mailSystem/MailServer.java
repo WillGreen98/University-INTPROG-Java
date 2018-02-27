@@ -8,6 +8,7 @@ package practical.mailSystem;
 import java.util.ArrayList;
 
 public class MailServer {
+	private MailClient client;
 	private ArrayList<MailItem> items;
 	
 	public MailServer() {
@@ -18,16 +19,13 @@ public class MailServer {
 		return items.size();
 	}
 	
+	//TODO fix function
 	public MailItem getNextMailItem(String user) {
-		MailItem item;
-		if(item == null) {
-            System.out.println("No new mail.");
-        } else {
-            item.printMail();
-        }
+		return null;
 	}
 	
-	public MailItem post(MailItem item) {
+	//TODO fix function
+	public MailItem post(MailItem post_item) {
 		return null;
 	}
 }
