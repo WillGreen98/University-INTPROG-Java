@@ -1,9 +1,8 @@
 package inClass.lecturer_Inheritance;
 
-public class SeniorLecturer extends Lecturer
-{
+public class SeniorLecturer extends Lecturer {
     private String unitResponsibility;
-    
+
     /**
      * Constructor for objects of class SeniorLecturer
      * 
@@ -12,8 +11,7 @@ public class SeniorLecturer extends Lecturer
      * @param officeNum the office number of the lecturer (building code and room number)
      * @param unit the unit the lecturer is responsible for
      */
-    public SeniorLecturer(String lectName, int lectPhone, String officeNum, String unit)
-    {
+    public SeniorLecturer(String lectName, int lectPhone, String officeNum, String unit) {
         super(lectName, lectPhone, officeNum);
         unitResponsibility = unit;
     }
@@ -30,17 +28,15 @@ public class SeniorLecturer extends Lecturer
         System.out.println("Project Students: " + numProjectStudents);
         System.out.println("Responsible for: " + unitResponsibility);
     }*/
-    
+
     /**
      * Method to print the information stored about the SeniorLecturer
      */
-    public void printInformation()
-    {
+    public void printInformation() {
         System.out.println("Subclass Method");
         super.printInformation();
         System.out.println("Additional info from subclass");
         System.out.println("Responsible for: " + unitResponsibility);
     }
-    
-    
+
 }

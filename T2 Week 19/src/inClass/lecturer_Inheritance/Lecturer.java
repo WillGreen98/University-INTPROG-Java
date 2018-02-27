@@ -5,75 +5,64 @@ package inClass.lecturer_Inheritance;
  * In Class Week 19
  */
 
-public class Lecturer
-{
+public class Lecturer {
     /** instance variables */
     private String name;
     private int phoneNumber;
     private String office;
     private int numProjectStudents;
-    
+
     /** constructor */
-    public Lecturer(String lectName, int lectPhone, String officeNum)
-    {
+    public Lecturer(String lectName, int lectPhone, String officeNum) {
         /** initialise instance variables */
         name = lectName;
         phoneNumber = lectPhone;
         office = officeNum;
         numProjectStudents = 0;
     }
-    
+
     /** accessor method for name */
-    public String getName()
-    {
+    public String getName() {
         return name;
     }
-    
+
     /** mutator method for name */
-    public void setName(String newName)
-    {
+    public void setName(String newName) {
         name = newName;
     }
-    
+
     /** accessor method for numProjectStudents */
-    public int getNumProjectStudents()
-    {
+    public int getNumProjectStudents() {
         return numProjectStudents;
     }
-    
+
     /** mutator method for numProjectStudents */
-    public void setNumProjectStudents(int newNumStudents)
-    {
+    public void setNumProjectStudents(int newNumStudents) {
         if (newNumStudents < 0) /** number of students cannot be negative */
         {
             System.out.println("Number of project students cannot be less than 0");
-        }
-        else if (newNumStudents > 6) /** number of students cannot be more than 6 */
+        } else if (newNumStudents > 6) /** number of students cannot be more than 6 */
         {
             System.out.println("Number of project students cannot be more than 6");
-        }
-        else
-        {
+        } else {
             numProjectStudents = newNumStudents;
         }
     }
-    
+
     /** method to calculate the number of hours spent on project students over the entered number of weeks*/
-    public int calculateProjectStudentHours(int numWeeks)
-    {
+    public int calculateProjectStudentHours(int numWeeks) {
         int numHours = (numProjectStudents * 2) * numWeeks;
-        
+
         return numHours;
     }
-    
-    public void printInformation()
-    {
+
+    public void printInformation() {
         String printString = "Lecturer Information";
         printString += "\nName: " + name;
         printString += "\nExtension Number: " + phoneNumber;
         printString += "\nOffice Number: " + office;
         printString += "\nProject Students: " + numProjectStudents;
-        
+
         System.out.println(printString);
     }
 }

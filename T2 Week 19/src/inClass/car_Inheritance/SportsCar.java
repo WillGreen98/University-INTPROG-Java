@@ -5,71 +5,54 @@ package inClass.car_Inheritance;
  * In Class Week 19
  */
 
-public class SportsCar extends Car
-{
+public class SportsCar extends Car {
     private boolean turboEngine;
     private boolean sportsMode;
     private boolean roofOpen;
 
-    public SportsCar(String cMake, String cModel, String cReg, double cEngine, String cFuel, String cSide, String cColour, boolean turbo)
-    {
+    public SportsCar(String cMake, String cModel, String cReg, double cEngine, String cFuel, String cSide,
+            String cColour, boolean turbo) {
         super(cMake, cModel, cReg, cEngine, cFuel, cSide, cColour);
         turboEngine = turbo;
         sportsMode = false;
         roofOpen = false;
     }
 
-    public void startSportsMode()
-    {
+    public void startSportsMode() {
         sportsMode = true;
     }
-    
-    public void stopSportsMode()
-    {
+
+    public void stopSportsMode() {
         sportsMode = false;
     }
-    
-    public void openRoof()
-    {
+
+    public void openRoof() {
         roofOpen = true;
     }
-    
-    public void closeRoof()
-    {
+
+    public void closeRoof() {
         roofOpen = false;
     }
 
-    public void printInformation()
-    {
+    public void printInformation() {
         super.printInformation();
-        
-        if(turboEngine)
-        {
+
+        if (turboEngine) {
             System.out.println("The car has a turbo engine");
-        }
-        else
-        {
+        } else {
             System.out.println("The car does not have a turbo engine");
         }
-        
-        if(roofOpen)
-        {
+
+        if (roofOpen) {
             System.out.println("The roof is open");
-        }
-        else
-        {
+        } else {
             System.out.println("The roof is closed");
         }
-        
-        
-        if(sportsMode)
-        {
+
+        if (sportsMode) {
             System.out.println("Sports mode is on");
-        }
-        else
-        {
+        } else {
             System.out.println("Sports mode is off");
         }
-        }
     }
-
+}

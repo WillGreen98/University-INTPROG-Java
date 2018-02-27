@@ -2,46 +2,37 @@ package inClass.zoo;
 
 import java.util.*;
 
-public class Animal
-{
+public class Animal {
     private String food;
     protected String home;
     private String noise;
     private Random hunger;
-    
-    public Animal(String animalFood, String animalHome, String animalNoise)
-    {
+
+    public Animal(String animalFood, String animalHome, String animalNoise) {
         food = animalFood;
         home = animalHome;
         noise = animalNoise;
         hunger = new Random();
     }
-    
-    public boolean getHunger()
-    {
+
+    public boolean getHunger() {
         return hunger.nextBoolean();
     }
-    
-    public void eat()
-    {
-        if(getHunger())
-        {
+
+    public void eat() {
+        if (getHunger()) {
             System.out.println("I'm really hungry, I'm going to eat now!");
-        }
-        else
-        {
+        } else {
             System.out.println("I'm not hungry");
         }
-    
+
     }
-    
-    public void makeNoise()
-    {
+
+    public void makeNoise() {
         System.out.println(noise + " " + noise + " " + noise + " " + noise);
     }
-    
-    public void sleep()
-    {
+
+    public void sleep() {
         System.out.println("zzzzZZZZzzzz");
     }
 }

@@ -1,20 +1,16 @@
 package inClass.zoo;
 
-public class Feline extends Animal
-{
-    
-    public Feline(String animalFood, String animalHome, String animalNoise)
-    {
+public class Feline extends Animal {
+
+    public Feline(String animalFood, String animalHome, String animalNoise) {
         super(animalFood, animalHome, animalNoise);
     }
-    
-    public void purr()
-    {
+
+    public void purr() {
         System.out.println("Purr Purr Purr Purr");
     }
-    
-    public String getHome()
-    {
+
+    public String getHome() {
         return home;
     }
 }

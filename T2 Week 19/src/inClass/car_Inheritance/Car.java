@@ -5,8 +5,7 @@ package inClass.car_Inheritance;
  * In Class Week 19
  */
 
-public class Car
-{
+public class Car {
     /** instance variables */
     private String make;
     private String model;
@@ -19,9 +18,8 @@ public class Car
     private boolean airConOn;
     private boolean lightsOn;
     private String colour;
-    
-    public Car(String cMake, String cModel, String cReg, double cEngine, String cFuel, String cSide, String cColour)
-    {
+
+    public Car(String cMake, String cModel, String cReg, double cEngine, String cFuel, String cSide, String cColour) {
         make = cMake;
         model = cModel;
         reg = cReg;
@@ -34,87 +32,66 @@ public class Car
         lightsOn = false;
         colour = cColour;
     }
-    
-    public String getMake()
-    {
+
+    public String getMake() {
         return make;
     }
-    
-    public String getModel()
-    {
+
+    public String getModel() {
         return model;
     }
-    
-    public String getRegistration()
-    {
+
+    public String getRegistration() {
         return reg;
     }
-    
-    public void setRegistration(String newReg)
-    {
+
+    public void setRegistration(String newReg) {
         reg = newReg;
     }
-    
-    public boolean getLightsOn()
-    {
+
+    public boolean getLightsOn() {
         return lightsOn;
     }
-    
-    public void setLightsOn(boolean newLightsOn)
-    {
+
+    public void setLightsOn(boolean newLightsOn) {
         lightsOn = newLightsOn;
     }
-    
-    public int getCurrentGear()
-    {
+
+    public int getCurrentGear() {
         return currentGear;
     }
-    
-    public void setCurrentGear(int newGear)
-    {
-        if (newGear <= 0)
-        {
+
+    public void setCurrentGear(int newGear) {
+        if (newGear <= 0) {
             System.out.println("Gear cannot be less than 1");
-        }
-        else if (newGear > 5)
-        {
+        } else if (newGear > 5) {
             System.out.println("Gear cannot be more than 5");
-        }
-        else
-        {
+        } else {
             currentGear = newGear;
         }
     }
-    
-    public String getColour()
-    {
+
+    public String getColour() {
         return colour;
     }
-    
-    public void setColour(String newColour)
-    {
+
+    public void setColour(String newColour) {
         colour = newColour;
     }
-    
-    public double getCurrentMileage()
-    {
+
+    public double getCurrentMileage() {
         return currentMileage;
     }
-    
-    public void setCurrentMileage(double newMileage)
-    {
-        if (newMileage < currentMileage)
-        {
+
+    public void setCurrentMileage(double newMileage) {
+        if (newMileage < currentMileage) {
             System.out.println("Mileage cannot go backwards");
-        }
-        else
-        {
+        } else {
             currentMileage = newMileage;
         }
     }
-    
-    public void printInformation()
-    {
+
+    public void printInformation() {
         String printString = "Car Information";
         printString += "\nMake: " + make;
         printString += "\nModel: " + model;
@@ -124,19 +101,18 @@ public class Car
         printString += "\nCurrent Mileage: " + currentMileage;
         printString += "\nDrivers Side: " + driverSide;
         printString += "\nColour: " + colour;
-        
+
         System.out.println(printString);
     }
-    
-    public static void main(String[] args)
-    {
+
+    public static void main(String[] args) {
         Dealership dealership = new Dealership();
-        
+
         dealership.addCar(new Car("Honda", "Civic", "AB12 CDE", 1.6, "Petrol", "Left", "Red"));
         dealership.addCar(new Car("Honda", "Jazz", "FG34 HIJ", 1.4, "Diesel", "Right", "Silver"));
         dealership.addCar(new SportsCar("Mazda", "MX5", "KL56 MNO", 2.0, "Petrol", "Left", "Blue", true));
-             
+
         dealership.printAllCars();
-        
+
     }
 }
