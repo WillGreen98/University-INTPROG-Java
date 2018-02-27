@@ -24,4 +24,16 @@ public class Overloading {
         double b = 12.3;
         System.out.println("Method 4: " + (a + b));
     }
+    
+    public static void main(String[] args) {
+        Overloading overloading = new Overloading();
+
+        overloading.example();
+        System.out.println();
+        overloading.example(2, 6);
+        System.out.println();
+        overloading.example(12.6);
+        System.out.println();
+        overloading.example(8);
+    }
 }
