@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 public class MailServer {
-	private ArrayList<MailItem> items;
+	private ArrayList<MailItem> items; // = new ArrayList<MailItem>();
 	
 	public MailServer() {
 		items = new ArrayList<MailItem>();

@@ -15,16 +15,14 @@ import java.util.ArrayList;
  * @author Michael Kölling and David J. Barnes
  * @version 0.2
  */
-public class NewsFeed
-{
-    private ArrayList<Post> posts;
+public class NewsFeed {
+    private ArrayList < Post > posts;
 
     /**
      * Construct an empty news feed.
      */
-    public NewsFeed()
-    {
-        posts = new ArrayList<Post>();
+    public NewsFeed() {
+        posts = new ArrayList < Post > ();
     }
 
     /**
@@ -32,8 +30,7 @@ public class NewsFeed
      * 
      * @param post  The post to be added.
      */
-    public void addPost(Post post)
-    {
+    public void addPost(Post post) {
         posts.add(post);
     }
 
@@ -41,12 +38,11 @@ public class NewsFeed
      * Show the news feed. Currently: print the news feed details
      * to the terminal.
      */
-    public void show()
-    {
+    public void show() {
         // display all posts
-        for(Post post : posts) {
+        for (Post post: posts) {
             post.display();
-            System.out.println();   // empty line between posts
+            System.out.println(); // empty line between posts
         }
     }
 }

@@ -19,7 +19,6 @@ public class IsWillHavingFun {
 		Calendar_Att cal_Att = new Calendar_Att();
 		Calendar gCal = new GregorianCalendar();
 		
-		
 	    System.out.println(Locale.getDefault() + ": " + (gCal.getFirstDayOfWeek() - 1) + " " + cal_Att.hourOfDay);   
 	}
 }
