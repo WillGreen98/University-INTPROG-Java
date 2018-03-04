@@ -13,28 +13,24 @@ This module will contain:
 There may be duplicate files of some classes, this is due to the topics being taught for a certain week. We may cover programming concepts that can be added to previous projects or that are needed for new teaching weeks :) 
 
 ## Week 13
-
 * Define objects and classes
 * Design appropriate classes for a given problem or scenario
 * Explain the difference between classes and objects
 * Implement and use classes using the Python programming language
 
 ## Week 14
-
 * Use UML to represent classes
 * Explain generalisation and inheritance
 * Organise classes into structures which support generalisation
 * Implement inheritance using the Python programming language
 
 ## Week 15 
-
 * Discuss the features of the Java programming language
 * Select the appropriate data types for a given problem
 * Use constructors and methods in the Java programming language
 * Experiment with debugging in BlueJ
 
 ## Week 16
-
 * Explain information hiding
 * Implement information hiding using the Java programming language
 * Develop advanced mutator methods using conditionals
@@ -42,13 +38,11 @@ There may be duplicate files of some classes, this is due to the topics being ta
 * Develop programs which make use of other objects and libraries
 
 ## Week 17
-
 * Develop applications using the Canvas and KeyboardInput classes
 * Explain Collections, Arrays and ArrayLists
 * Implement Arrays and ArrayLists in the Java programming language
 
 ## Week 18
-
 * Arrays / Array Lists
 * Iterators
 	* For Loops
@@ -56,7 +50,6 @@ There may be duplicate files of some classes, this is due to the topics being ta
 	* While Loops
 	
 ## Week 19
-
 * Recall the concepts of generalisation and inheritance 
 * Implement inheritance using the Java programming language 
 * Distinguish HAS-A and IS-A relationships between classes
@@ -69,4 +62,8 @@ There may be duplicate files of some classes, this is due to the topics being ta
 * Develop enum classes in Java
 
 
-	
+## Week 21
+* Describe the concept of coupling
+* Discuss the concept of cohesion
+* Use print statements to test programs developed using the Java programming language
+* Implement JUnit testing procedures
