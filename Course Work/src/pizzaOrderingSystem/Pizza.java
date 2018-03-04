@@ -50,7 +50,7 @@ public class Pizza {
     private void drawTopLine() {
         String topLine = "Pizza";
                 
-        double stringX = topLeftX+10;
+        double stringX = topLeftX + 10;
         double stringY = topLeftY + 25;
         
         canvas.setForegroundColor(Color.BLACK);
@@ -67,7 +67,7 @@ public class Pizza {
     private void drawBottomLine() {
         String bottomLine = "Crust: ";
                 
-        double stringX = topLeftX+10;
+        double stringX = topLeftX + 10;
         double stringY = topLeftY + 290;
         
         canvas.setForegroundColor(Color.BLACK);
