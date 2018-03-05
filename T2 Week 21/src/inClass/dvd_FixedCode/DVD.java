@@ -8,9 +8,9 @@ package inClass.dvd_FixedCode;
  */
 
 public class DVD {    
-    String name;
-    String director;
-    int rel_Year;
+    private String name;
+    private String director;
+    private int rel_Year;
     
     public DVD(String name, String director, int rel_Year) {        
         this.name = name;
