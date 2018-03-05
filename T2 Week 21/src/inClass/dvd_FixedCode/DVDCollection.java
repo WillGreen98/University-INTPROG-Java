@@ -1,5 +1,7 @@
 package inClass.dvd_FixedCode;
 
+import java.util.ArrayList;
+
 /**
  * @author Will
  * In Class Week 21
@@ -8,20 +10,18 @@ package inClass.dvd_FixedCode;
  */
 
 public class DVDCollection {
-    public DVD dvds;
+	ArrayList<DVD> dvd_Al = new ArrayList<DVD>();
+    DVD Guardians = new DVD("Guardians Of The Galaxy", "James Gunn", 2014);
+	DVD L_Blond = new DVD("Leagally Blond", "Robert Luketic", 2001);
 
     public DVDCollection() {
-        dvds = new DVD();
+    		dvd_Al.add(Guardians);
+    		dvd_Al.add(L_Blond);
     }
 
     public void printDVDInfo() {
-        dvds.printDVD1Info();
-        dvds.printDVD2Info();
-
-        dvds.dvd1Name = "Guardians of the Galaxy Vol 2";
-        dvds.dvd1ReleaseYear = 2017;
-
-        dvds.printDVD1Info();
-
+        for(DVD d: dvd_Al) {
+        		d.printDVDInfo();
+        }
     }
 }
