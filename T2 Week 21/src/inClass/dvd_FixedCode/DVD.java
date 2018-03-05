@@ -1,10 +1,10 @@
-package inClass.dvd_PoorCode;
+package inClass.dvd_FixedCode;
 
 /**
  * @author Will
  * In Class Week 21
  * 
- * Poor code example -> Coupling & Cohesion 
+ * Fixed code example -> Coupling & Cohesion 
  */
 
 public class DVD {
