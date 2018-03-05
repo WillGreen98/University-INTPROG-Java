@@ -13,7 +13,7 @@ public class DVDCollection {
 	ArrayList<DVD> dvd_Al = new ArrayList<DVD>();
     DVD Guardians = new DVD("Guardians Of The Galaxy", "James Gunn", 2014);
 	DVD L_Blond = new DVD("Leagally Blond", "Robert Luketic", 2001);
-
+	
     public DVDCollection() {
     		dvd_Al.add(Guardians);
     		dvd_Al.add(L_Blond);
