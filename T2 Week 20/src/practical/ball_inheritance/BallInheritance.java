@@ -11,12 +11,10 @@ public class BallInheritance {
         //ballStorage.addBall(new Football(100, 100, 5, 5, canvas, Color.PINK, Color.BLACK));
         //ballStorage.addBall(new RugbyBall(150, 200, 3, 4, canvas, Color.ORANGE));
 
-        for (int i = 0; i < 50; i++) {
+        for(int i = 0; i < 50; i++) {
             ballStorage.moveAllBalls();
         }
 
         ballStorage.printAllInformation();
-
     }
-
 }
