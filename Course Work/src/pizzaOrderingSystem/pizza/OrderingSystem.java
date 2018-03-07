@@ -12,7 +12,6 @@ import pizzaOrderingSystem.KeyboardInput;
 
 public class OrderingSystem {
     private Canvas canvas;
-    private KeyboardInput kb;
     
     /**
      * Constructor for the ordering system.
@@ -21,7 +20,6 @@ public class OrderingSystem {
         canvas = new Canvas("Pizza Ordering", 900, 650);         
     }
     
-   
     /**
      * Method to draw the outline of the order screen.
      */
