@@ -7,7 +7,6 @@ package pizzaOrderingSystem.topping;
 
 import pizzaOrderingSystem.Canvas;
 import java.awt.Color;
-import java.awt.Rectangle;
 
 public class Bacon extends Topping {
 	private float price = 0.02f;
