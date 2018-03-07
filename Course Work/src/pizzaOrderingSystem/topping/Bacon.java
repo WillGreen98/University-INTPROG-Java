@@ -29,10 +29,5 @@ public class Bacon extends Topping {
 	public void draw_Topping() {
 		int width = 1;
 		int height = 2;
-		Color color = setColour(current_Colour, color);
-
-		for(int i=0; i<=3; i++) {
-			
-		}
 	} 
 }
