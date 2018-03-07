@@ -6,8 +6,8 @@ package pizzaOrderingSystem.pizza;
  * @author 853829
  */
 
+import pizzaOrderingSystem.pizza.OrderingSystem;
 import java.awt.Color;
-
 import pizzaOrderingSystem.Canvas;
 
 public class Pizza {
