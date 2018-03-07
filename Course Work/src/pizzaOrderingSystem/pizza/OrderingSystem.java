@@ -1,11 +1,13 @@
-package pizzaOrderingSystem;
+package pizzaOrderingSystem.pizza;
 
 /**
  * Class to manage the pizza order.
- * @author yourStudentNumber
+ * @author 853829
  */
 
-import java.awt.*;
+import java.awt.Color;
+
+import pizzaOrderingSystem.Canvas;
 
 public class OrderingSystem {
     private Canvas canvas;

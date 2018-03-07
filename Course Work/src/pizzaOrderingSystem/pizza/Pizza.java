@@ -1,11 +1,14 @@
-package pizzaOrderingSystem;
+package pizzaOrderingSystem.pizza;
+
 
 /**
  * Class to represent a single pizza.
- * @author yourStudentNumber
+ * @author 853829
  */
 
-import java.awt.*;
+import java.awt.Color;
+
+import pizzaOrderingSystem.Canvas;
 
 public class Pizza {
     private Canvas canvas;

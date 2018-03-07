@@ -1,7 +1,7 @@
-package pizzaOrderingSystem;
+package pizzaOrderingSystem.pizza;
 
 /**
- * Class to start the running of the Pizza Ordering System.  You should not 
+ * Class to start the running of the Pizza Ordering System. You should not 
  * need to change this class
  * @author Claire Ancient
  */
