@@ -1,19 +1,21 @@
 package pizzaOrderingSystem.pizza;
 
-
 /**
  * Class to represent a single pizza.
  * @author 853829
  */
 
-import pizzaOrderingSystem.pizza.OrderingSystem;
 import java.awt.Color;
 import pizzaOrderingSystem.Canvas;
+import pizzaOrderingSystem.KeyboardInput;
 
 public class Pizza {
     private Canvas canvas;
+    private KeyboardInput kbInput;
     private double topLeftX;
     private double topLeftY;
+    
+	private String[] pizza_infos = null;
     
     /**
      * Constructor for pizza.
@@ -27,21 +29,61 @@ public class Pizza {
         topLeftY = startY;
     }
     
-    /**
-     * Method to display the pizza information on the screen.
-     */
-    public void displayPizza() {
-        drawPizza();
-        drawTopLine();
-        drawBottomLine();
-    }
-    
+    public String[] pizza_Options() {
+    		String[] size = {"small", "medium", "large"};
+    		String[] dough = {"deep pan", "thin crust", "stuffed crust"};
+    		String[] sauce = {"tomato", "bbq"};
+    		
+    		String pizza_Size = kbInput.getInputString();
+    		String pizza_Dough = kbInput.getInputString();
+    		for(int i=0; i<size.length && i<dough.length; i++) {
+    			for(String s: size) {
+    				if(s != pizza_Size) {
+    					System.out.println("Size not allowed. Size: " + size);
+    				}
+    			}
+    			
+    			for(String d: dough) {
+    				if(d != pizza_Dough) {
+    					System.out.println("Dough type not allowed. Dough: " + dough);
+    				}
+    			}
+    		}
+    	
+    		String pizza_Sauce = kbInput.getInputString();
+    		Color sauce_Color;
+    		for(int i=0; i<sauce.length; i++) {
+    			for(String s: sauce) {
+    				if(s != pizza_Sauce) {
+					System.out.println("Invalid sauce. Sauces: " + sauce);
+				}
+    			}
+    			
+    			if(pizza_Sauce == sauce[0]) {
+    				sauce_Color = Color.RED;
+    			} else if(pizza_Sauce == sauce[1]) {
+    				sauce_Color = Color.ORANGE;
+			}
+    		}
+    	
+    		pizza_infos[0] = pizza_Size;
+    		pizza_infos[1] = pizza_Dough;
+    		pizza_infos[2] = pizza_Sauce;
+    		pizza_infos[3] = sauce_Color;
+		return pizza_infos;
+    } 
+        
     /**
      * Method to display the pizza on the screen.
      */
     private void drawPizza() {
         canvas.setForegroundColor(Color.YELLOW);
         canvas.fillCircle(topLeftX + 150, topLeftY + 150, 200);
+        
+        String[] pizza_Info = pizza_Options();
+        Color c = pizza_Info[3];
+        canvas.setForegroundColor(c);
+        canvas.fillCircle(topLeftX + 170, topLeftY + 170, 200);
     }
     
     /**
@@ -51,7 +93,7 @@ public class Pizza {
      * screen (once completed)
      */
     private void drawTopLine() {
-        String topLine = "Pizza";
+        String topLine = "Pizza" + pizza_infos[0];
                 
         double stringX = topLeftX + 10;
         double stringY = topLeftY + 25;
@@ -68,7 +110,7 @@ public class Pizza {
      * completed)
      */
     private void drawBottomLine() {
-        String bottomLine = "Crust: ";
+        String bottomLine = "Crust: " + pizza_infos[1];
                 
         double stringX = topLeftX + 10;
         double stringY = topLeftY + 290;
@@ -77,4 +119,14 @@ public class Pizza {
         canvas.setFontSize(15);
         canvas.drawString(bottomLine, stringX, stringY);
     }    
+    
+    /**
+     * Method to display the pizza information on the screen.
+     */
+    public void displayPizza() {
+    		pizza_Options();
+        drawPizza();
+        drawTopLine();
+        drawBottomLine();
+    }
 }
