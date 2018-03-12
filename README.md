@@ -7,30 +7,34 @@ This module will contain:
 
 1. All in-classes examples
 2. Practical Session Code
-3. Random "Boredom" files within ./Boredom/bin/
+3. Random "Boredom" files within ./Boredom/src/
 4. Coursework
 
 There may be duplicate files of some classes, this is due to the topics being taught for a certain week. We may cover programming concepts that can be added to previous projects or that are needed for new teaching weeks :) 
 
 ## Week 13
+
 * Define objects and classes
 * Design appropriate classes for a given problem or scenario
 * Explain the difference between classes and objects
 * Implement and use classes using the Python programming language
 
 ## Week 14
+
 * Use UML to represent classes
-* Explain generalisation and inheritance
-* Organise classes into structures which support generalisation
+* Explain generalization and inheritance
+* Organize classes into structures which support generalization
 * Implement inheritance using the Python programming language
 
-## Week 15 
+## Week 15
+
 * Discuss the features of the Java programming language
 * Select the appropriate data types for a given problem
 * Use constructors and methods in the Java programming language
 * Experiment with debugging in BlueJ
 
 ## Week 16
+
 * Explain information hiding
 * Implement information hiding using the Java programming language
 * Develop advanced mutator methods using conditionals
@@ -38,11 +42,13 @@ There may be duplicate files of some classes, this is due to the topics being ta
 * Develop programs which make use of other objects and libraries
 
 ## Week 17
+
 * Develop applications using the Canvas and KeyboardInput classes
 * Explain Collections, Arrays and ArrayLists
 * Implement Arrays and ArrayLists in the Java programming language
 
 ## Week 18
+
 * Arrays / Array Lists
 * Iterators
 	* For Loops
@@ -50,12 +56,14 @@ There may be duplicate files of some classes, this is due to the topics being ta
 	* While Loops
 	
 ## Week 19
-* Recall the concepts of generalisation and inheritance 
+
+* Recall the concepts of generalization and inheritance 
 * Implement inheritance using the Java programming language 
 * Distinguish HAS-A and IS-A relationships between classes
 * Implement Polymorphism in the Java programming language
 
 ## Week 20
+
 * Implement method overriding using the Java programming language 
 * Use appropriate JavaDoc comments within applications developed
 * Implement method and constructor overloading in Java programs
@@ -63,7 +71,12 @@ There may be duplicate files of some classes, this is due to the topics being ta
 
 
 ## Week 21
+
 * Describe the concept of coupling
 * Discuss the concept of cohesion
 * Use print statements to test programs developed using the Java programming language
 * Implement JUnit testing procedures
+
+## Week 22
+
+INTPROG has now finished. A little early right...?
