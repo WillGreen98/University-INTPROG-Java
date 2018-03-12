@@ -2,20 +2,23 @@ package pizzaOrderingSystem.pizza;
 
 import java.awt.Color;
 import java.util.Arrays;
-
 import pizzaOrderingSystem.KeyboardInput;
 
 public class OrderSystem_Input {
+	/**
+	 * 
+	 */
 	private KeyboardInput kbInput = new KeyboardInput();
 	protected Object[] pizza_infos = new Object[3];
 	
-	public OrderSystem_Input() {
-		
-	}
+	/**
+	 * 
+	 */
+	public OrderSystem_Input() {}
 	
 	/**
      * 
-     * @return
+     * @return array containing all pizza info
      */
 	public Object[] pizza_Options() {
 		String[] size = {"small", "medium", "large"};
@@ -27,34 +30,25 @@ public class OrderSystem_Input {
 		
 		System.out.println("Enter type of dough: ");
 		String pizza_Dough = kbInput.getInputString();
-		for(int i=0; i<size.length || i<dough.length; i++) {	// Double for loop to handle both arrays
-			// Validation
-			for(String s: size) {
-				if(false) {
-					
-				} else {
-					System.out.println("Size not allowed. Size: " + Arrays.toString(size));
-					pizza_Options();
-				}
+		for(int i=0; i<Math.max(size.length, dough.length); i++) {	// Double for loop to handle both arrays
+			if(pizza_Size != size[i]) {
+				System.out.println("Size not allowed. Size: " + Arrays.toString(size));
+				pizza_Options();
 			}
-			
-			for(String d: dough) {
-				if(d != pizza_Dough) {
-					System.out.println("Dough type not allowed. Dough: " + Arrays.toString(dough));
-				}
+		
+			if(pizza_Dough != dough[i]) {
+				System.out.println("Dough type not allowed. Dough: " + Arrays.toString(dough));
+				pizza_Options();
 			}
 		}
 		
 		// Input for colour
 		Color sauce_Color;
-		
 		System.out.println("Enter the type of sause: ");
 		String pizza_Sauce = kbInput.getInputString();
 		for(int i=0; i<sauce.length; i++) {
-			for(String s: sauce) {
-				if(s != pizza_Sauce) {
-					System.out.println("Invalid sauce. Sauces: " + Arrays.toString(sauce));
-				}
+			if(pizza_Sauce != sauce[i]) {
+				System.out.println("Invalid sauce. Sauces: " + Arrays.toString(sauce));
 			}
 		}
 		
@@ -64,7 +58,7 @@ public class OrderSystem_Input {
 			sauce_Color = Color.ORANGE;
 		}
 
-		// Cast
+		// Object Casting
 		pizza_Size = (String) pizza_infos[0];
 		pizza_Dough = (String) pizza_infos[1];
 		pizza_Sauce = (String) pizza_infos[2];
