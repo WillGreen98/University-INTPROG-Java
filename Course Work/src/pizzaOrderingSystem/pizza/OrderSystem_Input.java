@@ -31,12 +31,12 @@ public class OrderSystem_Input {
 		System.out.println("Enter type of dough: ");
 		String pizza_Dough = kbInput.getInputString();
 		for(int i=0; i<Math.max(size.length, dough.length); i++) {	// Double for loop to handle both arrays
-			if(pizza_Size != size[i]) {
+			if(size[i].equals(pizza_Size)) {
 				System.out.println("Size not allowed. Size: " + Arrays.toString(size));
 				pizza_Options();
 			}
 		
-			if(pizza_Dough != dough[i]) {
+			if(dough[i].equals(pizza_Dough)) {
 				System.out.println("Dough type not allowed. Dough: " + Arrays.toString(dough));
 				pizza_Options();
 			}
@@ -47,7 +47,7 @@ public class OrderSystem_Input {
 		System.out.println("Enter the type of sause: ");
 		String pizza_Sauce = kbInput.getInputString();
 		for(int i=0; i<sauce.length; i++) {
-			if(pizza_Sauce != sauce[i]) {
+			if(sauce[i].equals(pizza_Sauce)) {
 				System.out.println("Invalid sauce. Sauces: " + Arrays.toString(sauce));
 			}
 		}

@@ -77,8 +77,8 @@ public class Pizza extends OrderSystem_Input {
      * Method to display the pizza information on the screen.
      */
     public void displayPizza() {
-    		pizza_Options();
-    		drawTopLine();
+    	pizza_Options();
+        drawTopLine();
         drawBottomLine();
         drawPizza();
     }
