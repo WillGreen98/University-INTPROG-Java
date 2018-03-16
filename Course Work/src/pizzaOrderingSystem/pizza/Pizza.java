@@ -34,9 +34,18 @@ public class Pizza extends OrderSystem_Input {
         canvas.setForegroundColor(Color.YELLOW);
         canvas.fillCircle(topLeftX + 150, topLeftY + 150, 200);
         
-        Color pizzaSauce_Colour = (Color)pizza_infos[3];
-        canvas.setForegroundColor(pizzaSauce_Colour);
-        canvas.fillCircle(topLeftX + 170, topLeftY + 170, 200);
+        Color sauce_Color = null;
+        if("tomato".equalsIgnoreCase(pizza_infos[2])) {
+			sauce_Color = Color.RED;
+		} else if("bbq".equalsIgnoreCase(pizza_infos[2])) {
+			sauce_Color = Color.ORANGE;
+		}
+        
+        canvas.setForegroundColor(sauce_Color);
+        canvas.fillCircle(topLeftX + 150, topLeftY + 150, 170);
+        
+        canvas.setForegroundColor(Color.WHITE);
+        canvas.fillCircle(topLeftX + 150, topLeftY + 150, 150);
     }
     
     /**
@@ -46,7 +55,7 @@ public class Pizza extends OrderSystem_Input {
      * screen (once completed)
      */
     private void drawTopLine() {
-        String topLine = "Pizza" + pizza_infos[0];
+        String topLine = "Pizza Size: " + pizza_infos[0];
                 
         double stringX = topLeftX + 10;
         double stringY = topLeftY + 25;
@@ -63,7 +72,7 @@ public class Pizza extends OrderSystem_Input {
      * completed)
      */
     private void drawBottomLine() {
-        String bottomLine = "Crust: " + pizza_infos[1];
+        String bottomLine = "Crust Type: " + pizza_infos[1];
                 
         double stringX = topLeftX + 10;
         double stringY = topLeftY + 290;
