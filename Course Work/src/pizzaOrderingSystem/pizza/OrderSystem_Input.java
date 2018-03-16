@@ -1,15 +1,19 @@
 package pizzaOrderingSystem.pizza;
 
-import java.awt.Color;
+/**
+ * Class to represent user input.
+ * @author 853829
+ */
+
+import java.util.List;
+import java.util.ArrayList;
 import java.util.Arrays;
+
 import pizzaOrderingSystem.KeyboardInput;
 
 public class OrderSystem_Input {
-	/**
-	 * 
-	 */
 	private KeyboardInput kbInput = new KeyboardInput();
-	protected Object[] pizza_infos = new Object[3];
+	protected String[] pizza_infos = new String[3];
 	
 	/**
 	 * 
@@ -20,50 +24,41 @@ public class OrderSystem_Input {
      * 
      * @return array containing all pizza info
      */
-	public Object[] pizza_Options() {
-		String[] size = {"small", "medium", "large"};
-		String[] dough = {"deep pan", "thin crust", "stuffed crust"};
-		String[] sauce = {"tomato", "bbq"};
+	public String[] pizza_Options() {	
+		List<String> size = new ArrayList<>(Arrays.asList("small", "medium", "large"));
+		List<String> dough = new ArrayList<>(Arrays.asList("deep pan", "thin crust", "stuffed crust"));
+		List<String> sauces = new ArrayList<>(Arrays.asList("tomato", "bbq"));
 		
 		System.out.println("Enter Pizza size: ");
 		String pizza_Size = kbInput.getInputString();
 		
+		while(!size.contains(pizza_Size)) {
+			System.out.println("Size not valid. Sizes: " + Arrays.asList(size));
+			
+			if(size.contains(pizza_Size)) {
+				pizza_infos[0] = pizza_Size;
+				break;
+			} 
+		} 
+		
 		System.out.println("Enter type of dough: ");
 		String pizza_Dough = kbInput.getInputString();
-		for(int i=0; i<Math.max(size.length, dough.length); i++) {	// Double for loop to handle both arrays
-			if(size[i].equals(pizza_Size)) {
-				System.out.println("Size not allowed. Size: " + Arrays.toString(size));
-				pizza_Options();
-			}
 		
-			if(dough[i].equals(pizza_Dough)) {
-				System.out.println("Dough type not allowed. Dough: " + Arrays.toString(dough));
-				pizza_Options();
-			}
+		if(!dough.contains(pizza_Dough)) {
+			System.out.println("Dough type not valid. Dough types: " + Arrays.asList(dough));
+		} else {
+			pizza_infos[1] = pizza_Dough;
 		}
 		
-		// Input for colour
-		Color sauce_Color;
 		System.out.println("Enter the type of sause: ");
 		String pizza_Sauce = kbInput.getInputString();
-		for(int i=0; i<sauce.length; i++) {
-			if(sauce[i].equals(pizza_Sauce)) {
-				System.out.println("Invalid sauce. Sauces: " + Arrays.toString(sauce));
-			}
+		
+		if(!sauces.contains(pizza_Sauce)) {
+			System.out.println("Sauce type not valid. Sauces: " + Arrays.asList(sauces));
+		} else {
+			pizza_infos[2] = pizza_Sauce;
 		}
 		
-		if(pizza_Sauce == sauce[0]) {
-			sauce_Color = Color.RED;
-		} else if(pizza_Sauce == sauce[1]) {
-			sauce_Color = Color.ORANGE;
-		}
-
-		// Object Casting
-		pizza_Size = (String) pizza_infos[0];
-		pizza_Dough = (String) pizza_infos[1];
-		pizza_Sauce = (String) pizza_infos[2];
-		sauce_Color = (Color) pizza_infos[3];
-		    		
 		return pizza_infos; // Return an array to pass values to drawPizza()
 	} 
 }
