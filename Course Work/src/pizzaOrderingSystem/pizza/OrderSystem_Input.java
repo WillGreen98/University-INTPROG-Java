@@ -29,33 +29,42 @@ public class OrderSystem_Input {
 		List<String> dough = new ArrayList<>(Arrays.asList("deep pan", "thin crust", "stuffed crust"));
 		List<String> sauces = new ArrayList<>(Arrays.asList("tomato", "bbq"));
 		
-		System.out.println("Enter Pizza size: ");
-		String pizza_Size = kbInput.getInputString();
+		// Needed as global variable for while condition... Can't do String pizza_Size = kbInput.getInputString();
+		String pizza_Size;		
+		do {
+			System.out.println("Enter Pizza size: ");
+			pizza_Size = kbInput.getInputString();
+			
+			if(size.contains(pizza_Size)) {
+				pizza_infos[0] = pizza_Size;
+			} else {
+				System.out.println("Size not valid. Sizes: " + Arrays.asList(size));	
+			}
+		} while(!size.contains(pizza_Size));
 		
-		if(size.contains(pizza_Size)) {
-			pizza_infos[0] = pizza_Size;
-		} else {
-			System.out.println("Size not valid. Sizes: " + Arrays.asList(size));	
-		}
+		String pizza_Dough;
+		do {
+			System.out.println("Enter type of dough: ");
+			pizza_Dough = kbInput.getInputString();
+			
+			if(dough.contains(pizza_Dough)) {
+				pizza_infos[1] = pizza_Dough;
+			} else {
+				System.out.println("Dough type not valid. Dough types: " + Arrays.asList(dough));
+			}
+		} while(!dough.contains(pizza_Dough));
 		
-		System.out.println("Enter type of dough: ");
-		String pizza_Dough = kbInput.getInputString();
-		
-		if(!dough.contains(pizza_Dough)) {
-			System.out.println("Dough type not valid. Dough types: " + Arrays.asList(dough));
-		} else {
-			pizza_infos[1] = pizza_Dough;
-		}
-		
-		
-		System.out.println("Enter the type of sause: ");
-		String pizza_Sauce = kbInput.getInputString();
-		
-		if(!sauces.contains(pizza_Sauce)) {
-			System.out.println("Sauce type not valid. Sauces: " + Arrays.asList(sauces));
-		} else {
-			pizza_infos[2] = pizza_Sauce;
-		}
+		String pizza_Sauce;
+		do {
+			System.out.println("Enter the type of sause: ");
+			pizza_Sauce = kbInput.getInputString();
+			
+			if(sauces.contains(pizza_Sauce)) {
+				pizza_infos[2] = pizza_Sauce;
+			} else {
+				System.out.println("Sauce not valid. Sauces: " + Arrays.asList(sauces));
+			}
+		} while(!sauces.contains(pizza_Sauce));
 		
 		return pizza_infos; // Return an array to pass values to drawPizza()
 	} 
