@@ -32,14 +32,11 @@ public class OrderSystem_Input {
 		System.out.println("Enter Pizza size: ");
 		String pizza_Size = kbInput.getInputString();
 		
-		while(!size.contains(pizza_Size)) {
-			System.out.println("Size not valid. Sizes: " + Arrays.asList(size));
-			
-			if(size.contains(pizza_Size)) {
-				pizza_infos[0] = pizza_Size;
-				break;
-			} 
-		} 
+		if(size.contains(pizza_Size)) {
+			pizza_infos[0] = pizza_Size;
+		} else {
+			System.out.println("Size not valid. Sizes: " + Arrays.asList(size));	
+		}
 		
 		System.out.println("Enter type of dough: ");
 		String pizza_Dough = kbInput.getInputString();
@@ -49,6 +46,7 @@ public class OrderSystem_Input {
 		} else {
 			pizza_infos[1] = pizza_Dough;
 		}
+		
 		
 		System.out.println("Enter the type of sause: ");
 		String pizza_Sauce = kbInput.getInputString();
