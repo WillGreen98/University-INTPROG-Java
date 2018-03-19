@@ -42,10 +42,10 @@ public class Pizza extends OrderSystem_Input {
 		}
         
         canvas.setForegroundColor(sauce_Color);
-        canvas.fillCircle(topLeftX + 150, topLeftY + 150, 170);
+        canvas.fillCircle(topLeftX + 150, topLeftY + 150, 175);
         
         canvas.setForegroundColor(Color.WHITE);
-        canvas.fillCircle(topLeftX + 150, topLeftY + 150, 150);
+        canvas.fillCircle(topLeftX + 150, topLeftY + 150, 155);
     }
     
     /**
