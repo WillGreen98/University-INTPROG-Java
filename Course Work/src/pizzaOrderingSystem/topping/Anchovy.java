@@ -1,19 +1,17 @@
 package pizzaOrderingSystem.topping;
 
-import java.awt.Color;
-
 /**
  * Toping Class to manage pizza toping Anchovy.
  * @author 853829
  */
 
+import java.awt.Color;
 import pizzaOrderingSystem.Canvas;
 
 public class Anchovy extends Topping {
-	private float price = 0.07f;
-	
-	public Anchovy(Canvas canvas, int x, int y, Float price) {
-		super(canvas, x, y, price);	
+	public Anchovy(Canvas canvas, int x, int y) {
+		super(canvas, x, y);	
+		setPrice(0.07f);
 	}
 	
 	public void draw_Topping() {
