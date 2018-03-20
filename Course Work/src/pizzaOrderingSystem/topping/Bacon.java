@@ -9,24 +9,20 @@ import pizzaOrderingSystem.Canvas;
 import java.awt.Color;
 
 public class Bacon extends Topping {
-	private float price = 0.02f;
-	
-	public Bacon(Canvas canvas, int x, int y, float price) {
-		super(canvas, x, y, price);
+	public Bacon(Canvas canvas, int x, int y) {
+		super(canvas, x, y);
+		setPrice(0.02f);
 	}
 	
-	public Color setColour(Color current_Colour, Color color) {
-		if(current_Colour == color) {
-			color = Color.PINK;
-		} else {
-			color = Color.RED;
-		}
-		
-		return color;
-	} 
-	
 	public void draw_Topping() {
-		int width = 1;
-		int height = 2;
+		Color rectColor;
+		int width = 5;
+		int height = 15;
+		
+		for(int i=0, j=20; i<=3 && j<=80; i++, j+=5) {
+			rectColor = (i % 2 == 0) ? Color.RED : Color.PINK;
+			canvas.setForegroundColor(rectColor);
+			canvas.fillRectangle(j, 20, width, height);
+		}
 	} 
 }
