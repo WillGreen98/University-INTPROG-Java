@@ -20,11 +20,7 @@ public class Anchovy extends Topping {
 		
 		double circle_X = x + 95;
 		double circle_Y = y + 105;
-		
-		double eye_X = x + 118;
-		double eye_Y = y + 111;
-		double eye_Diameter= 4;
-		
+				
 		double Triangle_X = x + 89;
 		double Triangle_Y = y + 102;
         
@@ -35,7 +31,7 @@ public class Anchovy extends Topping {
 		canvas.fillSemiCircle(circle_X, circle_Y, width, height, true, true);
 		
 		canvas.setForegroundColor(Color.WHITE);
-		canvas.fillCircle(eye_X, eye_Y, eye_Diameter);
+		canvas.fillCircle(x + 118, y + 111, 4);
 		
 		canvas.setForegroundColor(Color.GRAY);
 		canvas.fillTriangle(Triangle_X ,Triangle_Y, Triangle_X, Triangle_Y +15, Triangle_X +15, Triangle_Y +10);

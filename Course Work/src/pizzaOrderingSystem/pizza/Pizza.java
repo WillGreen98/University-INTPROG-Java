@@ -8,6 +8,9 @@ package pizzaOrderingSystem.pizza;
 import java.awt.Color;
 
 import pizzaOrderingSystem.pizza.OrderSystem_Input;
+import pizzaOrderingSystem.topping.Anchovy;
+import pizzaOrderingSystem.topping.Bacon;
+import pizzaOrderingSystem.topping.Topping;
 import pizzaOrderingSystem.Canvas;
 
 public class Pizza extends OrderSystem_Input {
@@ -35,9 +38,9 @@ public class Pizza extends OrderSystem_Input {
         canvas.fillCircle(topLeftX + 150, topLeftY + 150, 200);
         
         Color sauce_Color = null;
-        if("tomato".equalsIgnoreCase(pizza_infos[2])) {
+        if("tomato".equalsIgnoreCase(pizza_info[2])) {	// The preferred Java style...
 			sauce_Color = Color.RED;
-		} else if("bbq".equalsIgnoreCase(pizza_infos[2])) {
+		} else if("bbq".equalsIgnoreCase(pizza_info[2])) {
 			sauce_Color = Color.ORANGE;
 		}
         
@@ -55,8 +58,8 @@ public class Pizza extends OrderSystem_Input {
      * screen (once completed)
      */
     private void drawTopLine() {
-        String topLine = "Pizza Size: " + pizza_infos[0];
-                
+    		String topLine = "Pizza No: " + " - Pizza Size: " + pizza_info[0];
+    		
         double stringX = topLeftX + 10;
         double stringY = topLeftY + 25;
         
@@ -64,7 +67,7 @@ public class Pizza extends OrderSystem_Input {
         canvas.setFontSize(15);
         canvas.drawString(topLine, stringX, stringY);
     }
-    
+    		
     /**
      * Method to write the information shown in the bottom line of the 
      * individual pizza on the screen.  
@@ -72,7 +75,7 @@ public class Pizza extends OrderSystem_Input {
      * completed)
      */
     private void drawBottomLine() {
-        String bottomLine = "Crust Type: " + pizza_infos[1];
+        String bottomLine = "Crust Type: " + pizza_info[1] + " - Sauce: " + pizza_info[2];
                 
         double stringX = topLeftX + 10;
         double stringY = topLeftY + 290;
@@ -86,7 +89,7 @@ public class Pizza extends OrderSystem_Input {
      * Method to display the pizza information on the screen.
      */
     public void displayPizza() {
-    	pizza_Options();
+    		pizza_Options();
         drawTopLine();
         drawBottomLine();
         drawPizza();

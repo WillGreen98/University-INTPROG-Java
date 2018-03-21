@@ -2,29 +2,29 @@ package pizzaOrderingSystem.pizza;
 
 /**
  * @author Will
- *
+ * Enum Class to handle price indexing
  */
 
 public enum PizzaOptions_Pricing {	
-	SMALL("Size", "small", 0.00f, 78.54f),
-	MEDIUM("Size", "medium", 0.00f, 113.10f),
-	LARGE("Size", "large", 0.00f, 153.94f),
-	DEEPPAN("DoughType", "deep pan", 0.11f, 0.00f),
-	THINCRUST("DoughType", "thin crust", 0.08f, 0.00f),
-	STUFFEDCRUST("DoughType", "stuffed crust", 0.14f, 0.00f),
-	TOMATO("Sauce", "tomato", 0.00f, 0.00f),
-	BBQ("Sauce", "bqq", 0.50f, 0.00f);
+	SMALL("Size", "small", 0.00, 78.54),
+	MEDIUM("Size", "medium", 0.00, 113.10),
+	LARGE("Size", "large", 0.00, 153.94),
+	DEEPPAN("DoughType", "deep pan", 0.11, 0.00),
+	THINCRUST("DoughType", "thin crust", 0.08, 0.00),
+	STUFFEDCRUST("DoughType", "stuffed crust", 0.14, 0.00),
+	TOMATO("Sauce", "tomato", 0.00, 0.00),
+	BBQ("Sauce", "bqq", 0.50, 0.00);
 	
 	private String type;
 	private String value;
-	private float price;
-	private float diameter;
+	private double price;
+	private double area;
 	
-	PizzaOptions_Pricing(String type, String value, float price, float diameter) {
+	PizzaOptions_Pricing(String type, String value, double price, double area) {
 		this.type = type;
 		this.value = value;
 		this.price = price;
-		this.diameter = diameter;
+		this.area = area;
 	}
 
 	public String getType() {
@@ -43,7 +43,7 @@ public enum PizzaOptions_Pricing {
 		this.value = value;
 	}
 
-	public float getPrice() {
+	public double getPrice() {
 		return price;
 	}
 
@@ -51,13 +51,11 @@ public enum PizzaOptions_Pricing {
 		this.price = price;
 	}
 
-	public float getDiameter() {
-		return diameter;
+	public double getArea() {
+		return area;
 	}
 
-	public void setDiameter(float diameter) {
-		this.diameter = diameter;
+	public void setDiameter(float area) {
+		this.area = area;
 	}
-	
-	
 }

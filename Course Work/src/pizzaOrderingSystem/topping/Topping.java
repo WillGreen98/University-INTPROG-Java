@@ -13,11 +13,10 @@ public class Topping {
 	protected int y;
 	protected float price;
 	
-	public Topping(Canvas canvas, int x, int y, Float price) {
+	public Topping(Canvas canvas, int x, int y) {
 		this.canvas = canvas;
 		this.x = x;
 		this.y = y;
-		this.price = price;
 	}
 
 	public int getX() {

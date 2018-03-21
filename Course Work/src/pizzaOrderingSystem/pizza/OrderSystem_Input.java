@@ -13,12 +13,31 @@ import pizzaOrderingSystem.KeyboardInput;
 
 public class OrderSystem_Input {
 	private KeyboardInput kbInput = new KeyboardInput();
-	protected String[] pizza_infos = new String[3];
+	private ArrayList<String> toppings_List;
 	
-	/**
-	 * 
-	 */
-	public OrderSystem_Input() {}
+	protected String[] pizza_info = new String[3];
+
+	public OrderSystem_Input() {
+		toppings_List = new ArrayList<String>();
+	}
+	
+	public void ask_Topping(int toppings_Count) {
+		List<String> toppings = new ArrayList<>(Arrays.asList("anchovy", "bacon"));
+		
+		String topping;
+		for(int i=0; i<toppings_Count; i++) {
+			do {
+				System.out.println("Enter Topping: ");
+				topping = kbInput.getInputString();
+				
+				if(toppings.contains(topping)) {
+					toppings_List.add(topping);					
+				} else {
+					System.out.println("Topping not avaliable. Toppings: " + Arrays.asList(toppings));
+				}
+			} while(!toppings.contains(topping));
+		}
+	}
 	
 	/**
      * 
@@ -36,7 +55,7 @@ public class OrderSystem_Input {
 			pizza_Size = kbInput.getInputString();
 			
 			if(size.contains(pizza_Size)) {
-				pizza_infos[0] = pizza_Size;
+				pizza_info[0] = pizza_Size;
 			} else {
 				System.out.println("Size not valid. Sizes: " + Arrays.asList(size));	
 			}
@@ -48,7 +67,7 @@ public class OrderSystem_Input {
 			pizza_Dough = kbInput.getInputString();
 			
 			if(dough.contains(pizza_Dough)) {
-				pizza_infos[1] = pizza_Dough;
+				pizza_info[1] = pizza_Dough;
 			} else {
 				System.out.println("Dough type not valid. Dough types: " + Arrays.asList(dough));
 			}
@@ -60,12 +79,27 @@ public class OrderSystem_Input {
 			pizza_Sauce = kbInput.getInputString();
 			
 			if(sauces.contains(pizza_Sauce)) {
-				pizza_infos[2] = pizza_Sauce;
+				pizza_info[2] = pizza_Sauce;
 			} else {
 				System.out.println("Sauce not valid. Sauces: " + Arrays.asList(sauces));
 			}
 		} while(!sauces.contains(pizza_Sauce));
 		
-		return pizza_infos; // Return an array to pass values to drawPizza()
+		int toppings_Num; 
+		System.out.println("How many topppings would you like to add? : ");
+		toppings_Num = kbInput.getInputInteger();
+		
+		if(Integer.toString(toppings_Num).isEmpty() || toppings_Num == 0) { 
+			System.out.println("A simple pizza person, you are, enjoy you must.");
+			ask_Topping(toppings_Num);
+		} else if(toppings_Num == 1) {
+			ask_Topping(toppings_Num);
+		} else if(toppings_Num == 2) {
+			ask_Topping(toppings_Num);
+		} else {
+			System.out.println("Error, invalid option.");
+		}
+		
+		return pizza_info; // Return an array to pass values to drawPizza()
 	} 
 }
