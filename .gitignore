@@ -1,5 +1,8 @@
 /.metadata/
 .metadata
+nbproject/
+manifest.mf
+build.xml
 bin/
 tmp/
 *.tmp
@@ -108,3 +111,13 @@ Network Trash Folder
 Temporary Items
 .apdisk
 /Pizza/nbproject/private/
+/T2 Week 15/nbproject/private/
+/Hello World!/nbproject/private/
+/T2 Week 21/nbproject/private/
+/T2 Week 17/nbproject/private/
+/T2 Week 19/nbproject/private/
+/Course Work/nbproject/private/
+/T2 Week 16/nbproject/private/
+/T2 Week 18/nbproject/private/
+/T2 Week 20/nbproject/private/
+/Boredom/nbproject/private/
