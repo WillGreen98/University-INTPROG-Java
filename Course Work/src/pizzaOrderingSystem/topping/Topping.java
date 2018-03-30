@@ -9,36 +9,61 @@ import pizzaOrderingSystem.Canvas;
 
 public class Topping {
 	protected Canvas canvas;
-	protected int x;
-	protected int y;
+	protected double x;
+	protected double y;
+	private double topLeftX;
+	private double topLeftY;
 	protected float price;
-	
-	public Topping(Canvas canvas, int x, int y) {
-		this.canvas = canvas;
-		this.x = x;
-		this.y = y;
-	}
 
-	public int getX() {
+	/**
+	 * @param canvas
+	 * @param x
+	 * @param y
+	 */
+	public Topping(Canvas canvas, double x, double y) {
+		this.canvas = canvas;
+		topLeftX = x;
+		topLeftY = y;
+	}
+	
+	/**
+	 * @return
+	 */
+	public double getX() {
 		return x;
 	}
 
+	/**
+	 * @return
+	 */
 	public float getPrice() {
 		return price;
 	}
 
+	/**
+	 * @param price
+	 */
 	public void setPrice(float price) {
 		this.price = price;
 	}
 
+	/**
+	 * @param x
+	 */
 	public void setX(int x) {
 		this.x = x;
 	}
 
-	public int getY() {
+	/**
+	 * @return
+	 */
+	public double getY() {
 		return y;
 	}
 
+	/**
+	 * @param y
+	 */
 	public void setY(int y) {
 		this.y = y;
 	}

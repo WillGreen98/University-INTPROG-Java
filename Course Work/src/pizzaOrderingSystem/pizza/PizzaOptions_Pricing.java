@@ -20,6 +20,12 @@ public enum PizzaOptions_Pricing {
 	private double price;
 	private double area;
 	
+	/**
+	 * @param type
+	 * @param value
+	 * @param price
+	 * @param area
+	 */
 	PizzaOptions_Pricing(String type, String value, double price, double area) {
 		this.type = type;
 		this.value = value;
@@ -27,34 +33,58 @@ public enum PizzaOptions_Pricing {
 		this.area = area;
 	}
 
+	/**
+	 * @return
+	 */
 	public String getType() {
 		return type;
 	}
 
+	/**
+	 * @param type
+	 */
 	public void setType(String type) {
 		this.type = type;
 	}
 
+	/**
+	 * @return
+	 */
 	public String getValue() {
 		return value;
 	}
 
+	/**
+	 * @param value
+	 */
 	public void setValue(String value) {
 		this.value = value;
 	}
 
+	/**
+	 * @return
+	 */
 	public double getPrice() {
 		return price;
 	}
 
+	/**
+	 * @param price
+	 */
 	public void setPrice(float price) {
 		this.price = price;
 	}
 
+	/**
+	 * @return
+	 */
 	public double getArea() {
 		return area;
 	}
 
+	/**
+	 * @param area
+	 */
 	public void setDiameter(float area) {
 		this.area = area;
 	}
