@@ -1,0 +1,25 @@
+/**
+ * 
+ */
+package pizzaOrderingSystem.pizza;
+
+/**
+ * @author Will
+ *
+ */
+public enum PizzaOptions_Pricing {	
+	private String type;
+	private String value;
+	private float price;
+	private float diameter;
+	
+	PizzaOptions_Pricing(String type, String value, float price, float diameter) {
+		this.type = type;
+		this.value = value;
+		this.price = price;
+		this.diameter = diameter;
+	}
+	
+	
+
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Boredom/Boredom.iml" filepath="$PROJECT_DIR$/Boredom/Boredom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Course Work/Course Work.iml" filepath="$PROJECT_DIR$/Course Work/Course Work.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hello World!/Hello World!.iml" filepath="$PROJECT_DIR$/Hello World!/Hello World!.iml" />
+      <module fileurl="file://$PROJECT_DIR$/T2 Week 15/T2 Week 15.iml" filepath="$PROJECT_DIR$/T2 Week 15/T2 Week 15.iml" />
+      <module fileurl="file://$PROJECT_DIR$/T2 Week 16/T2 Week 16.iml" filepath="$PROJECT_DIR$/T2 Week 16/T2 Week 16.iml" />
+      <module fileurl="file://$PROJECT_DIR$/T2 Week 17/T2 Week 17.iml" filepath="$PROJECT_DIR$/T2 Week 17/T2 Week 17.iml" />
+      <module fileurl="file://$PROJECT_DIR$/T2 Week 18/T2 Week 18.iml" filepath="$PROJECT_DIR$/T2 Week 18/T2 Week 18.iml" />
+      <module fileurl="file://$PROJECT_DIR$/T2 Week 19/T2 Week 19.iml" filepath="$PROJECT_DIR$/T2 Week 19/T2 Week 19.iml" />
+      <module fileurl="file://$PROJECT_DIR$/T2 Week 20/T2 Week 20.iml" filepath="$PROJECT_DIR$/T2 Week 20/T2 Week 20.iml" />
+      <module fileurl="file://$PROJECT_DIR$/T2 Week 21/T2 Week 21.iml" filepath="$PROJECT_DIR$/T2 Week 21/T2 Week 21.iml" />
+    </modules>
+  </component>
+</project>

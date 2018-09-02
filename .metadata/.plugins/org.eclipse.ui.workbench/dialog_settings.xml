@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="WorkbenchPreferenceDialogSettings">
+		<item value="0" key="DIALOG_X_ORIGIN"/>
+		<item value="0" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="org.eclipse.ui.preferences.keysPreferencePage">
+		<item value="true" key="actionSetFilter"/>
+		<item value="true" key="uncategorizedFilter"/>
+		<item value="true" key="internalFilter"/>
+	</section>
+	<section name="EditorSelectionDialog">
+		<item value="true" key="EditorSelectionDialog.STORE_ID_INTERNAL_EXTERNAL"/>
+		<item value=".pdf" key="EditorSelectionDialog.STORE_ID_FILE_EXTENSION"/>
+		<item value="Skim" key="EditorSelectionDialog.STORE_ID_DESCR"/>
+	</section>
+	<section name="org.eclipse.ui.internal.QuickAccess">
+		<item value="563" key="dialogHeight"/>
+		<item value="900" key="dialogWidth"/>
+		<list key="textEntries">
+		</list>
+		<list key="orderedElements">
+		</list>
+		<list key="orderedProviders">
+		</list>
+		<list key="textArray">
+		</list>
+	</section>
+	<section name="NewWizardAction">
+	</section>
+	<section name="InstallationDialogSettings">
+		<item value="702" key="DIALOG_WIDTH"/>
+		<item value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont" key="DIALOG_FONT_NAME"/>
+		<item value="652" key="DIALOG_HEIGHT"/>
+		<item value="84" key="DIALOG_X_ORIGIN"/>
+		<item value="21" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="ImportExportAction">
+		<item value="org.eclipse.ui.wizards.import.FileSystem" key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID"/>
+		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+		</list>
+	</section>
+	<section name="ZipFileImportWizard">
+	</section>
+	<section name="PreferencesExportWizard">
+	</section>
+	<section name="FileSystemImportWizard">
+		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID"/>
+		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
+		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="/Users/Will/Downloads/Cat/CatProjectBlueJ"/>
+			<item value="/Users/Will/Desktop/Programming/Eclipse-workspaces/Uni/T2 Week 21/src/inClass/dvd_PoorCode"/>
+			<item value="/Users/Will/Desktop/PoorCodeExample"/>
+			<item value="/Users/Will/Downloads/PoorCodeExample"/>
+			<item value="/Users/Will/Desktop/week 20/Example Code(1)/PlanetsEnum"/>
+			<item value="/Users/Will/Desktop/Week 18/Completed 2/Loops"/>
+			<item value="/Users/Will/Desktop/NetBeans Starter Files 2/Network/src/network"/>
+			<item value="/Users/Will/Desktop/NetBeans Starter Files 2/BallInheritance/src/ballinheritance"/>
+			<item value="/Users/Will/Downloads/PizzaOrderingSystem/PizzaOrderingSystemNetBeans/src/pizzaorderingsystemnetbeans"/>
+			<item value="/Users/Will/Desktop/Week 20/Example Code/LecturerInheritance"/>
+			<item value="/Users/Will/Desktop/Week 20/Example Code/TypeSignature"/>
+			<item value="/Users/Will/Desktop/Week 20/overloadingexample"/>
+			<item value="/Users/Will/Desktop/Week 19/Example Code/LecturerInheritance"/>
+			<item value="/Users/Will/Desktop/Week 19/Example Code/CarInheritance"/>
+			<item value="/Users/Will/Desktop/Week 19/Example Code(1)/Zoo"/>
+			<item value="/Users/Will/Downloads/AndroidExample/src/androidexample"/>
+			<item value="/Users/Will/Downloads/ZooIncomplete"/>
+		</list>
+	</section>
+</section>

@@ -1,0 +1,63 @@
+package pizzaOrderingSystem.pizza;
+
+/**
+ * @author Will
+ *
+ */
+
+public enum PizzaOptions_Pricing {	
+	SMALL("Size", "small", 0.00f, 78.54f),
+	MEDIUM("Size", "medium", 0.00f, 113.10f),
+	LARGE("Size", "large", 0.00f, 153.94f),
+	DEEPPAN("DoughType", "deep pan", 0.11f, 0.00f),
+	THINCRUST("DoughType", "thin crust", 0.08f, 0.00f),
+	STUFFEDCRUST("DoughType", "stuffed crust", 0.14f, 0.00f),
+	TOMATO("Sauce", "tomato", 0.00f, 0.00f),
+	BBQ("Sauce", "bqq", 0.50f, 0.00f);
+	
+	private String type;
+	private String value;
+	private float price;
+	private float diameter;
+	
+	PizzaOptions_Pricing(String type, String value, float price, float diameter) {
+		this.type = type;
+		this.value = value;
+		this.price = price;
+		this.diameter = diameter;
+	}
+
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+
+	public String getValue() {
+		return value;
+	}
+
+	public void setValue(String value) {
+		this.value = value;
+	}
+
+	public float getPrice() {
+		return price;
+	}
+
+	public void setPrice(float price) {
+		this.price = price;
+	}
+
+	public float getDiameter() {
+		return diameter;
+	}
+
+	public void setDiameter(float diameter) {
+		this.diameter = diameter;
+	}
+	
+	
+}

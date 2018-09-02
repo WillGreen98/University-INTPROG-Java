@@ -1,0 +1,54 @@
+package pizzaOrderingSystem.pizza;
+
+/**
+ * Class to represent user input.
+ * @author 853829
+ */
+
+import java.util.Arrays;
+import pizzaOrderingSystem.KeyboardInput;
+
+public class OrderSystem_Input {
+	/**
+	 * 
+	 */
+	private KeyboardInput kbInput = new KeyboardInput();
+	protected String[] pizza_infos = new String[3];
+	
+	/**
+	 * 
+	 */
+	public OrderSystem_Input() {}
+	
+	/**
+     * 
+     * @return array containing all pizza info
+     */
+	public String[] pizza_Options() {
+		String[] size = {"small", "medium", "large"};		
+		String[] dough = {"deep pan", "thin crust", "stuffed crust"};
+		String[] sauce = {"tomato", "bbq"};
+		
+		System.out.println("Enter Pizza size: ");
+		String pizza_Size = kbInput.getInputString();
+		
+		if(size.equals(pizza_Size)) {
+			System.out.println("yes");
+		}
+		
+		System.out.println("Enter type of dough: ");
+		String pizza_Dough = kbInput.getInputString();
+
+		
+		System.out.println("Enter the type of sause: ");
+		String pizza_Sauce = kbInput.getInputString();
+
+		
+		// Object Casting
+		pizza_Size = (String) pizza_infos[0];
+		pizza_Dough = (String) pizza_infos[1];
+		pizza_Sauce = (String) pizza_infos[2];
+		    		
+		return pizza_infos; // Return an array to pass values to drawPizza()
+	} 
+}

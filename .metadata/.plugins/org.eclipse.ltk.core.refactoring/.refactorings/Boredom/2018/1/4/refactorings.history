@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;Boredom1_IsWillHavingFun&apos; to &apos;InClass_Boredom&apos;&#x0A;- Original project: &apos;Boredom&apos;&#x0A;- Original element: &apos;Boredom/src/Boredom1_IsWillHavingFun&apos;&#x0A;- Renamed element: &apos;Boredom/src/InClass_Boredom&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings&#x0A;- Rename subpackages of the package" description="Rename package &apos;Boredom1_IsWillHavingFun&apos;" flags="589830" hierarchical="true" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;Boredom1_IsWillHavingFun" name="InClass_Boredom" qualified="false" references="true" stamp="1516635297341" textual="false" version="1.0"/>
+</session>
